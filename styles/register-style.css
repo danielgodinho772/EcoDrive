@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #6a6969;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.iphoneMockup {
+  width: min(90vw, calc(90vh * 375 / 812));
+  aspect-ratio: 375 / 812;
+  border: 13.5px solid #000;
+  border-radius: 15% / 7.5%;
+  background: #7e7b7b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphoneScreen {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 11% / 5.5%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.notch {
+  width: 31.4%;
+  height: 3.7%;
+  background: #000;
+  border-radius: 18.5px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.status-bar {
+  position: absolute;
+  top: -3px;
+  left: 17px;
+  width: 91%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.title-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.title-icon {
+  width: 43px;
+  height: 43px;
+}
+
+.criar {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.cadastro-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  width: 240px;
+  max-width: 100%;
+  height: 35px;
+  padding: 8px 12px;
+  margin-bottom: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.continue-button {
+  width: 240px;
+  max-width: 100%;
+  height: 35px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; 
+  margin-bottom: 30px; 
+}
+
+.continue-button:hover {
+  background-color: #333333;
+}
+
+.terms-text {
+  font-size: 10px;
+  font-weight: 400;
+  color: #828282;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 280px;
+}
+
+.terms-text a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+
+.slogan {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: auto;
+    padding-left: 0; 
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .input-field,
+  .continue-button {
+    width: 90%;
+  }
+
+  .title-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .criar {
+    font-size: 16px;
+  }
+}

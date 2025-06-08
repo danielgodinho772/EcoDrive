@@ -140,10 +140,6 @@ html,body{
     background-color: #333333; 
 }
 
-.hidden {
-    display: none;
-}
-
 .text-terms {
     width: auto;
     height: auto;
@@ -269,9 +265,13 @@ html,body{
     color: #000000; 
 }
 
+.hidden {
+    display: none; 
+}
+
 @media (max-width: 480px) {
     .input-field, .social-button {
-        width: 90%; /* Ajusta a largura para telas menores */
+        width: 90%; 
     }
 
     .title-icon {
