@@ -6,6 +6,7 @@
     <title>EcoDrive - Home</title>
 
     <link rel="stylesheet" href="/styles/homepage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -25,10 +26,40 @@
 
             <main class="main-content">
                 <div class="quick-filters">
-                    <button class="filter-pill active">Favoritos</button>
-                    <button class="filter-pill">Histórico</button>
-                    <button class="filter-pill">Recompensas</button>
+                    <button class="filter-pill">
+                        <span class="material-icons">favorite</span>
+                        Favoritos
+                    </button>
+                    <button class="filter-pill">
+                        <span class="material-icons">history</span>
+                        Histórico
+                    </button>
+                    <button class="filter-pill">
+                        <span class="material-icons">card_giftcard</span>
+                        Recompensas
+                    </button>
                 </div>
             </main>
+
+            <nav class="navigation-bar">
+                <button class="nav-segment" aria-label="Home">
+                    <span class="material-icons">home</span>
+                    <span class="nav-label">Home</span>
+                </button>
+                <button class="nav-segment" aria-label="Atividades">
+                    <span class="material-icons">format_list_bulleted</span>
+                    <span class="nav-label">Atividades</span>
+                </button>
+                <button class="nav-segment" aria-label="Notificações">
+                    <span class="material-icons">notifications</span>
+                    <span class="nav-label">Notificações</span>
+                </button>
+                <button class="nav-segment" aria-label="Perfil">
+                    <span class="material-icons">person</span>
+                    <span class="nav-label">Perfil</span>
+                </button>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>
