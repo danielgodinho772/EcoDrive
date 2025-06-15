@@ -16,4 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (e) {
     
   }
+
+  document.querySelectorAll('.recycle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.href = 'maps-screen.html';
+    });
+  });
 });

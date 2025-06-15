@@ -6,6 +6,8 @@
     <title>EcoDrive - Buscar</title>
 
     <link rel="stylesheet" href="/styles/maps-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 
 </head>
 <body>
@@ -13,7 +15,84 @@
         <div class="iphoneScreen">
             <img src="/src/assets/icons/statusbar.png" alt="status-bar" class="status-bar">
             <div class="notch"></div>
-        </div>  
+
+            <header class="header">
+                <form>
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar endereço" class="search-input">
+                        <button type="button" class="search-button"></button>
+                    </div>
+                </form>
+            </header>
+
+            <main class="main-content">
+                <div class="quick-filters">
+                    <button class="filter-pill">
+                        Filtros
+                        <span class="expand-arrow"></span>
+                    </button>
+                    <button class="filter-pill">
+                        Sort
+                        <span class="expand-arrow"></span>
+                    </button>
+                </div>
+                <div id="map" style="width: 100%; height: 350px; margin-top: 20px; border-radius: 12px; overflow: hidden;"></div>
+            </main>
+
+            <div class="list-container" id="collectors-panel" style="display: none;">
+                <div class="list-handle"></div>
+                <div class="listing">
+                    <div class="image-carousel">
+                        <img src="/src/assets/imgs/coletor.jpg" alt="Coletor" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+                        <div class="carousel-pagination">
+                            <div class="carousel-dot selected"></div>
+                            <div class="carousel-dot"></div>
+                            <div class="carousel-dot"></div>
+                        </div>
+                    </div>
+                    <div class="listing-info">
+                        <div class="product-name">Coletor Exemplo</div>
+                        <span class="experience">3 anos de parceria</span>
+                        <div class="rating-distance">
+                          <span class="star-outline" aria-label="Nota">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            4.8
+                          </span>
+                          <span>1.2 km</span>
+                        </div>
+                        <div class="price-cta">
+                            <button class="cta-button">Selecionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navigation-bar">
+                <button class="nav-segment" aria-label="Home">
+                    <span class="material-icons">home</span>
+                    <span class="nav-label">Home</span>
+                </button>
+
+                <button class="nav-segment" aria-label="Atividades">
+                    <span class="material-icons">format_list_bulleted</span>
+                    <span class="nav-label">Atividades</span>
+                </button>
+
+                <button class="nav-segment" aria-label="Notificações">
+                    <span class="material-icons">notifications</span>
+                    <span class="nav-label">Notificações</span>
+                </button>
+
+                <button class="nav-segment" aria-label="Perfil">
+                    <span class="material-icons">person</span>
+                    <span class="nav-label">Perfil</span>
+                </button>
+            </nav>
+
+        </div>
     </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="/js/maps.js"></script>
 </body>
 </html>
