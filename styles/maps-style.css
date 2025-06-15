@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6a6969;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.iphoneMockup {
+  width: min(90vw, calc(90vh * 375 / 812));
+  aspect-ratio: 375 / 812;
+  border: 13.5px solid #000;
+  border-radius: 15% / 7.5%;
+  background: #7e7b7b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphoneScreen {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 11% / 5.5%;
+    position: relative;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.notch {
+    width: 31.4%;
+    height: 3.7%;
+    background: #000;
+    border-radius: 18.5px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.status-bar {
+  position: absolute;
+  top: -3px;
+  left:17px;
+  width: 91%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}

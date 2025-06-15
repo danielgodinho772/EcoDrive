@@ -24,6 +24,38 @@
                 </form>
             </header>
 
+            <section class="boas-vindas">
+                <div class="welcome-message" id="welcome-message">
+                    <span class="user-saudacao">Olá, <span id="user-name">usuário</span></span>
+                    <span class="user-pergunta">O que você irá reciclar hoje?</span>
+                </div>
+                <div class="recycle-buttons">
+                    <button class="recycle-btn" id="btn-plastico">
+                        <div class="plastico-bg"></div>
+                        <div class="plastico-overlay"></div>
+                        <span class="btn-label">Plástico</span>
+                    </button>
+
+                    <button class="recycle-btn" id="btn-papel">
+                        <div class="papel-bg"></div>
+                        <div class="papel-overlay"></div>
+                        <span class="btn-label">Papel</span>
+                    </button>
+
+                    <button class="recycle-btn" id="btn-metal">
+                        <div class="metal-bg"></div>
+                        <div class="metal-overlay"></div>
+                        <span class="btn-label">Metal</span>
+                    </button>
+                    
+                    <button class="recycle-btn" id="btn-vidro">
+                        <div class="vidro-bg"></div>
+                        <div class="vidro-overlay"></div>
+                        <span class="btn-label">Vidro</span>
+                    </button>
+                </div>
+            </section>
+            
             <main class="main-content">
                 <div class="quick-filters">
                     <button class="filter-pill">
@@ -61,5 +93,7 @@
             </nav>
         </div>
     </div>
+    
+    <script src="/js/home-page.js"></script>
 </body>
 </html>

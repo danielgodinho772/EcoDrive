@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const storedUser = JSON.parse(localStorage.getItem(email));
         if (storedUser.password === senha) {
-          alert('Login realizado com sucesso!');
+          sessionStorage.setItem('usuarioLogado', email);
+          window.location.href = 'home-page.html';
         } else {
           alert('Senha incorreta. Tente novamente.');
           passwordInput.value = '';

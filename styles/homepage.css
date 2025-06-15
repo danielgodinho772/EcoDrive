@@ -5,14 +5,14 @@
 }
 
 html, body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #6a6969;
-    overflow: auto;
-    font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #6a6969;
+  overflow: auto;
+  font-family: 'Inter', sans-serif;
 }
 
 .iphoneMockup {
@@ -30,30 +30,30 @@ html, body {
 }
 
 .iphoneScreen {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    border-radius: 11% / 5.5%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding: 110px 10px 10px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 11% / 5.5%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 110px 10px 10px;
 }
 
 .notch {
-    width: 31.4%;
-    height: 3.7%;
-    background: #000;
-    border-radius: 18.5px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 31.4%;
+  height: 3.7%;
+  background: #000;
+  border-radius: 18.5px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .status-bar {
@@ -67,134 +67,423 @@ html, body {
 }
 
 .search-container {
-    position: absolute;
-    width: 260px;
-    height: 33px;
-    left: 9px;
-    top: 52px;
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-    gap: 12px;
-    background: #F5F5F5;
-    border-radius: 8px;
+  position: absolute;
+  width: 260px;
+  height: 33px;
+  left: 9px;
+  top: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 12px;
+  background: #F5F5F5;
+  border-radius: 8px;
 }
 
 .search-input {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #333;
-    font-size: 14px;
-    line-height: 1.5;
-    height: 100%;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%;
 }
+
 .search-input::placeholder {
-    color: #999;
+  color: #999;
 }
 
 .search-button {
-    width: 18px;
-    height: 18px;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
 }
 
 .quick-filters {
-    position: absolute;
-    top: 95px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    text-size-adjust: 100%;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  text-size-adjust: 100%;
 }
 
-.filter-pill{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 10px;
-    gap: 3px;
-    width: 83px;
-    height: 23px;
-    border: 1px solid #E6E6E6;
-    border-radius: 6px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-size: 10px;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    font-weight: 500;
-    font-style: normal;
+.filter-pill {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 3px;
+  width: 83px;
+  height: 23px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-size: 10px;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .filter-pill .material-icons {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .filter-pill:nth-child(3) {
-    font-size: 9px;
+  font-size: 9px;
+}
+
+.filter-pill:hover {
+  background: #f0f0f0;
+  border-color: #bdbdbd;
+  transition: background 0.2s, border-color 0.2s;
 }
 
 .navigation-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    height: 12%;
-    bottom: 0;
-    background: #fff;
-    padding: 0 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  bottom: 20px;
+  background: #fff;
+  padding: 0 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
+
 .navigation-bar .nav-segment {
-    background: none;
-    border: none;
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background 0.2s;
-    height: 100%;
-    justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.2s;
+  height: 100%;
+  justify-content: center;
 }
+
 .navigation-bar .nav-segment:focus-visible,
 .navigation-bar .nav-segment:active {
-    background: #f0f0f0;
+  background: #f0f0f0;
 }
+
 .navigation-bar .nav-segment .material-icons {
-    font-size: 24px;
-    color: #49454F;
-    margin-top: 8px;
-    margin-bottom: 2px;
+  font-size: 24px;
+  color: #49454F;
+  margin-top: 8px;
+  margin-bottom: 2px;
 }
+
 .navigation-bar .nav-segment .nav-label {
-    font-size: 8px;
-    line-height: 10px;
-    color: #49454F;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.5px;
-    user-select: none;
-    margin-bottom: 8px;
+  font-size: 8px;
+  line-height: 10px;
+  color: #49454F;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+  user-select: none;
+  margin-bottom: 8px;
+}
+
+.boas-vindas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.welcome-message .user-saudacao {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 6px;
+}
+
+.welcome-message .user-pergunta {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  margin-left: 6px;
+}
+
+.recycle-buttons {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 100%;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.recycle-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 70px;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s, box-shadow 0.15s;
+  gap: 6px;
+}
+
+.recycle-btn#btn-plastico {
+  background: none;
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  overflow: hidden;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.recycle-btn#btn-plastico .plastico-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i0.wp.com/www.larplasticos.com.br/wp-content/uploads/2020/02/Reciclagem-dos-pl%C3%A1sticos.jpg?fit=750%2C496&ssl=1') center center/cover no-repeat;
+  filter: blur(2px);
+  border-radius: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-plastico .plastico-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(33,150,243,0.45);
+  border-radius: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-plastico span,
+.recycle-btn#btn-plastico .material-icons {
+  display: none !important;
+}
+
+.recycle-btn#btn-plastico .btn-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  pointer-events: none;
+  white-space: nowrap;
+  background: none;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.recycle-btn#btn-papel {
+  background: none;
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  overflow: hidden;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.recycle-btn#btn-papel .papel-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://degam.com.br/wp-content/uploads/2018/09/reciclagem-papel.jpg') center center/cover no-repeat;
+  filter: blur(2px);
+  border-radius: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-papel .papel-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(76,175,80,0.45);
+  border-radius: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-papel .btn-label {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-metal {
+  background: none;
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  overflow: hidden;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.recycle-btn#btn-metal .metal-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://nobremetais.com.br/blog/wp-content/uploads/2024/11/aluminio.webp') center center/cover no-repeat;
+  filter: blur(2px);
+  border-radius: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-metal .metal-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,152,0,0.45);
+  border-radius: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-metal .btn-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  pointer-events: none;
+  white-space: nowrap;
+  background: none;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.recycle-btn#btn-vidro {
+  background: none;
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  overflow: hidden;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.recycle-btn#btn-vidro .vidro-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://archglassbrasil.com.br/wp-content/uploads/2021/12/reciclagem_vidro-450x308-1.jpg') center center/cover no-repeat;
+  filter: blur(2px);
+  border-radius: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-vidro .vidro-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,191,174,0.45);
+  border-radius: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.recycle-btn#btn-vidro .btn-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 0 #000;
+  pointer-events: none;
+  white-space: nowrap;
+  background: none;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.recycle-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
 }
